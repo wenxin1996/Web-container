@@ -12,5 +12,5 @@
 > 代码很少，实现的功能也非常简单。<br>
 * 程序首先会创建一个serverSocket的对象，并注册成占用8080端口的服务，创建类用到的地址“127.0.0.1”是指向本机的地址，也就是localhost。<br>
 * 程序会监听来自客户端的请求，并通过serverSocket.accept()获取。<br>
-* 通过Socket的InputStream流获取请求报文，处理分析报文，主要摘出报文的资源定位符，确定请求中需要的资源。查看本地是否存在资源，若存在则通过Socket的OutputStream流输出。<br>
+* 通过Socket的InputStream流获取请求报文，处理分析报文，主要摘出报文的资源定位符，确定请求中需要的资源。查看本地是否存在资源，若存在则封装成http报文，通过Socket的OutputStream流输出。<br>
 * 关闭获取的Socket，重复第二步。直到接受到关闭服务的请求。<br>
