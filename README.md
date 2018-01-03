@@ -16,4 +16,5 @@
 * 关闭获取的Socket，重复第二步。直到接受到关闭服务的请求。<br>
 
 ## 使用
-> 可以通过配置好的java环境，用控制台编译启动，资源放在webroot文件夹里。
+> 可以通过配置好的java环境，用控制台编译启动，资源放在webroot文件夹里。<br>
+  启动后在浏览器输入 http://localhost:8080/index.html 就可以访问webroot下的index.html文件。
